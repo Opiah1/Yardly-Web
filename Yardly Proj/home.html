@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="titles.css">
+  <link rel="stylesheet" href="guide.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+          <span class="site-name">Yardly</span>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <a href="signup.html" class="join-button">Join</a>
+        </div>
+      </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover your local marketplace for used items</h1>
+    </div>
+    <form class="search-form">
+        <div class="search-wrapper">
+            <input type="text" placeholder="Enter your email to sign up for our newsletter..." />
+            <button type="submit">Sign Up</button>
+        </div>       
+    </form>
+  </section>
+
+  <!-- Discover Section -->
+  <!--section class="discover">
+    <h2 class="discover-overlay">DISCOVER</h2>
+    <div class="discover-gallery">
+    <div class="discover-item">
+        <img src="images/denisse-leon-p9-uI-p6fv0-unsplash.jpg" alt="Hot Air Balloon">
+    </div>
+    <div class="discover-item">
+        <img src="images/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" alt="Concert">
+    </div>
+    <div class="discover-item">
+        <img src="images/spacejoy-sh6Aj176NAQ-unsplash.jpg" alt="Interior">
+    </div>
+    </div>
+    <div class="discover-descriptions">
+        <div class="desc">Explore events around you, from art fairs to food festivals.</div>
+        <div class="desc">Catch live music, performances, and community concerts.</div>
+        <div class="desc">Learn more</div>
+    </div>
+</section-->
+
+   <div class="discover-slider">
+        <section class="discover active">
+            <h2 class="discover-overlay">DISCOVER</h2>
+            <div class="discover-gallery">
+            <div class="discover-item">
+                <img src="images/denisse-leon-p9-uI-p6fv0-unsplash.jpg" alt="Hot Air Balloon">
+            </div>
+            <div class="discover-item">
+                <img src="images/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" alt="Concert">
+            </div>
+            <div class="discover-item">
+                <img src="images/spacejoy-sh6Aj176NAQ-unsplash.jpg" alt="Interior">
+            </div>
+            </div>
+            <div class="discover-descriptions">
+                <div class="desc">Explore events around you, from art fairs to food festivals.</div>
+                <div class="desc">Catch live music, performances, and community concerts.</div>
+                <div class="desc learn-more" onclick="nextSlide()">Learn more →</div>
+            </div>
+        </section>
+
+        <section class="discover">
+            <h2 class="discover-overlay">EXPLORE</h2>
+            <div class="discover-gallery">
+            <div class="discover-item">
+                <img src="images/denisse-leon-p9-uI-p6fv0-unsplash.jpg" alt="Hot Air Balloon">
+            </div>
+            <div class="discover-item">
+                <img src="images/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" alt="Concert">
+            </div>
+            <div class="discover-item">
+                <img src="images/spacejoy-sh6Aj176NAQ-unsplash.jpg" alt="Interior">
+            </div>
+            </div>
+            <div class="discover-descriptions">
+                <div class="desc">Explore events around you, from art fairs to food festivals.</div>
+                <div class="desc">Catch live music, performances, and community concerts.</div>
+                <div class="desc learn-more">
+                    <span onclick="prevSlide()">← Back</span> | 
+                    <span onclick="nextSlide()">Next →</span>
+                  </div>
+            </div>
+        </section>
+
+        <section class="discover">
+            <h2 class="discover-overlay">EXPERIENCE</h2>
+            <div class="discover-gallery">
+            <div class="discover-item">
+                <img src="images/denisse-leon-p9-uI-p6fv0-unsplash.jpg" alt="Hot Air Balloon">
+            </div>
+            <div class="discover-item">
+                <img src="images/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" alt="Concert">
+            </div>
+            <div class="discover-item">
+                <img src="images/spacejoy-sh6Aj176NAQ-unsplash.jpg" alt="Interior">
+            </div>
+            </div>
+            <div class="discover-descriptions">
+                <div class="desc">Explore events around you, from art fairs to food festivals.</div>
+                <div class="desc">Catch live music, performances, and community concerts.</div>
+                <div class="desc learn-more">
+                    <span onclick="prevSlide()">← Back</span>
+                  </div>
+            </div>
+        </section>
+   </div>
+ 
+  
+
+  <!-- Guide Section -->
+  <section class="guide">
+    <h2>Your Guide to Buying and Selling<br>Locally</h2>
+    <div class="guide-items">
+        <div class="guide-item"><img src="images/shche_-team-FrmcRrX6iqA-unsplash.jpg"/></div>
+        <div class="guide-item"><img src="images/nadine-e-0xD40qm07X0-unsplash.jpg"/></div>
+        <div class="guide-item"><img src="images/jake-weirick-DCtbmtV9Qk0-unsplash.jpg"/></div>
+        <div class="guide-descriptions">
+            <div class="g-desc">Upload images, videos, and documents to showcase your items.</div>
+            <div class="g-desc">Use our search feature to find exactly what you need.</div>
+            <div class="g-desc">Join events in your community and meet new people</div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h3>Stay Updated with Our Newsletter</h3>
+    <input type="email" id="emailInput" placeholder="Enter your email">
+    <button onclick="subscribeNewsletter()">Sign Up</button>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h3>FAQs</h3>
+    <div class="faq-item" onclick="toggleFAQ(this)">
+      <h4>How to create listings?</h4>
+      <p class="faq-answer">You can create listings from your dashboard...</p>
+    </div>
+    <!-- More FAQs -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Marketplace. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .site-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #21a366; /* Green highlight */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #21a366;
+    color: #ffffff;
+  }
+  .join-button {
+    position: absolute;
+    right: 30px;
+    text-decoration: none;
+    background-color: #21a366;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }

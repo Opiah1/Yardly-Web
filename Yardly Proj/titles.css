@@ -41,9 +41,9 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 80px;
-    color: white;
+    color: whitesmoke;
     font-weight: 900;
-    letter-spacing: 70px;
+    letter-spacing: 50px;
     z-index: 10;
     width: 100%;
     text-align: center;

@@ -1,4 +1,5 @@
 .newsletter{
+    position: relative;
     border-top: 4px solid #f9dc3c;
     border-bottom: 4px solid #f9dc3c;
     background-color: #21a366;
@@ -57,5 +58,7 @@
 }
   
 .newsletter-form button:hover {
-    background-color: darkgreen;
+    background-color: #e0c620;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
